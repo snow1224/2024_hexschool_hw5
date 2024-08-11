@@ -1,0 +1,25 @@
+.sideMenu{
+    background-color: $gray-100;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 296px;
+}
+
+.menu{
+    
+    &-title{
+        display: flex;
+        align-items: center;
+        color: $gray-900;
+        padding: 12px 16px;
+        font-size: $font-size-base;
+        font-weight: bold;
+        span{
+            margin-right: 16px;
+        }
+    }
+}
