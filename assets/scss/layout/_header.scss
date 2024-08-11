@@ -1,4 +1,6 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+/*把bootstrap5 原本的icon隱藏
+  參考：https://stackoverflow.com/questions/43233421/changing-dropdown-icon-on-bootstrap
+*/
+.dropdown-toggle::after {
+  display: none;
 }

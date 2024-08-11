@@ -21,5 +21,21 @@
         span{
             margin-right: 16px;
         }
+        &:hover{
+            color: $white;
+        }
+        &:active{
+            color: $success;
+            border-left: solid $success 4px;
+        }
+    }
+    li:hover{
+        background-color: #00000062;
+    }
+    .active{
+        border-left: solid $success 4px;
+    }
+    .mns-1{
+        margin-left: -4px;
     }
 }
