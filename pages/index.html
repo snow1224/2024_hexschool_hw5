@@ -8,17 +8,235 @@
   </head>
   <body>
     <div class="d-flex">
-        <aside>
-          <%- include('./layout/navbarFix'); -%>
-        </aside>
+      <aside><%- include('./layout/navbarFix'); -%></aside>
 
-        <main class="ms-4 container-fluid">
-          <div class="row">
-            <%- include('./layout/header'); -%>
+      <main class="ms-4 container-fluid">
+        <div class="row"><%- include('./layout/header'); -%></div>
+        <div class="row pe-4">
+          <section class="col-4 ps-2">
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle d-flex align-items-center fw-bold mb-1"
+                href="javascript:void(0)"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                All (4)
+                <span class="ms-2 material-symbols-outlined text-success">
+                  keyboard_arrow_down
+                </span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <button class="dropdown-item" type="button">Action</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Another action
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <article class="list-group">
+              <a
+                href="#"
+                class="list-group-item list-group-item-light list-group-item-action"
+                aria-current="true"
+              >
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1 fs-7">Chapter Assignment 2</h6>
+                  <small class="fs-7 text-dark">4 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-1 fs-6 fw-bold">Please check this file…</p>
+                  <small class="text-body-secondary">Emily Wang</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1 fs-7">Chapter Assignment 1</h6>
+                  <small class="fs-7 text-dark">12 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-1 fs-6 fw-bold">My Homework</p>
+                  <small class="text-body-secondary">David Xu</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1 fs-7">Final Assignment</h6>
+                  <small class="fs-7 text-dark">18 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-1 fs-6 fw-bold">Have a problem with this…</p>
+                  <small class="text-body-secondary">Tony Wei</small>
+                </div>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex justify-content-between">
+                  <h6 class="mb-1 fs-7">Final Assignment</h6>
+                  <small class="fs-7 text-dark">19 hrs ago</small>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-1 fs-6 fw-bold">Did I do it right?</p>
+                  <small class="text-body-secondary">Christina Lin</small>
+                </div>
+              </a>
+            </article>
+          </section>
+          <div class="col-8">
+            <div class="d-flex justify-content-end">
+              <p class="text-secondary fs-7 mb-2">2 comments</p>
+            </div>
+            <article class="card mb-3">
+              <header class="card-header">
+                <div class="d-flex align-items-center justify-content-between">
+                  <hgroup>
+                    <h7 class="fs-7">Chapter Assignment 2 / HTML&CSS</h7>
+                    <h5 class="mb-1 fs-6 fw-bold">
+                      Please check this file for me, thanks!
+                    </h5>
+                  </hgroup>
+                  <a href="#">
+                    <span class="material-symbols-outlined"> more_vert </span>
+                  </a>
+                </div>
+              </header>
+              <div class="card-body">
+                <article class="card-text">
+                  <a href="#">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="../assets/images/emilywang.jpeg"
+                        alt="提問者大頭貼"
+                        class="object-fit-cover rounded-circle"
+                        width="40"
+                        height="40"
+                      />
+                      <div class="ps-3 d-flex flex-column">
+                        <p class="fw-bold">Emily Wang</p>
+                        <p class="text-secondary fs-7">
+                          10:38 AM (4 hours ago)
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="ms-4 ps-5 pb-3 border-bottom">
+                    <p class="mb-3 fs-6">
+                      Hi Teacher, the attached file is my homework of chapter 2.
+                      And here comes a question: Why in the following code the
+                      height of the
+                      <span class="text-success bg-light">div</span>
+                      is bigger than the height of the
+                      <span class="text-success bg-light">img</span> ? There is
+                      a gap below the image, but it doesn’t seems to be a
+                      padding/margin. <br />
+                      What is the gap or extra space below image?
+                    </p>
+
+                    <button
+                      type="button"
+                      class="btn btn-light d-flex align-items-center rounded-0 border-1 border-gray400"
+                    >
+                      <span class="material-symbols-outlined">
+                        attach_file
+                      </span>
+                      HW-2-David.zip
+                    </button>
+                  </div>
+                </article>
+
+                <article class="card-text pt-3">
+                  <div class="d-flex justify-content-between">
+                    <a href="#">
+                      <div class="d-flex align-items-center mb-3">
+                        <img
+                          src="../assets/images/andychen.jpeg"
+                          alt="使用者大頭貼"
+                          class="object-fit-cover rounded-circle"
+                          width="40"
+                          height="40"
+                        />
+                        <div class="ps-3 d-flex flex-column">
+                          <p class="fw-bold">Andy Chen (You)</p>
+                          <p class="text-secondary fs-7">
+                            13:24 AM (1 hours ago)
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="d-flex">
+                      <a href="javascript:void(0);" class="me-4">
+                        <span class="material-symbols-outlined outline-icon">
+                          star
+                          </span>
+                    </a>
+                    <a href="javascript:void(0);">
+                      <span class="material-symbols-outlined">
+                        edit
+                        </span>
+                    </a>
+                    </div>
+                  </div>
+                  <div class="ms-4 ps-5 pb-3">
+                    Hi David, by default, an image is rendered inline, like a letter so it sits on the same line 
+                    that a, b, c and d sit on. There is space below that line for the descenders you find on 
+                    letters like g, j, p and q. <br/>
+                    <br/>
+                    You can:
+                    <br/>
+                    <br/>
+                    <ul>
+                      <li>
+                        adjust the <span class="text-success bg-light">vertical-align</span> of the image 
+                        to position it elsewhere (e.g. the <span class="text-success bg-light">middle</span> ) or 
+                      </li>
+                      <li>
+                        change the <span class="text-success bg-light">display</span> so it isn’t inline.
+                      </li>
+                    </ul> 
+                  </div>
+                </article>
+              </div>
+            </article>
+            <!--換頁和回答-->
+            <div class="row align-items-center justify-content-between">
+              <div class="col-3">
+                  <div class="d-flex">
+                    <a href="#">
+                      <span class="material-symbols-outlined me-4">
+                        keyboard_arrow_left
+                        </span>
+                    </a>
+                    <a href="#">
+                      <span class="material-symbols-outlined">
+                        keyboard_arrow_right
+                        </span>
+                    </a>
+                  </div>
+              </div>
+              <div class="col-auto">
+                <div class="d-flex flex-wrap">
+                  <button class="btn btn-outline-success px-5 py-2 me-3 rounded-0">
+                    Mark as read
+                  </button>
+                  <button class="btn btn-success px-5 py-2 rounded-0">
+                    Reply
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--換頁和回答-->
           </div>
-        </main>
-
-      </div>
+        </div>
+      </main>
+    </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
